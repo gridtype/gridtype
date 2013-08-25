@@ -1,26 +1,10 @@
     <div id="main" class="span7">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <h1><?php echo $row->name;?></h1>
-        <small class="muted">By:</small> 
-        <a href="<?php echo base_url() . 'images/user/' . $owner_id;?>"><?php echo $owner_name;?></a>
-		<a href="<?php echo base_url().$row->image.$row->image_type;?>" class="fancybox"><img src="<?php echo base_url().$row->image.$row->image_type;?>" class="img-polaroid" style="cursor:pointer"></a>
 
-        <div class="iterations-well">
-            <div class="iteration-container"><img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"></div>
-        </div>
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		<a href="<?php echo base_url().$row->image.$row->image_type;?>" class="fancybox"><img src="<?php echo base_url().$row->image.$row->image_type;?>" class="img-polaroid" style="cursor:pointer"></a>
 
    <!--     <div class="iterations-well">
             <div class="iteration-container"><img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"></div>
         </div> -->
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
     </div>
 
     <div id="right-rail" class="span5">
@@ -36,23 +20,6 @@
 
         <div class="tab-content">
             <div class="tab-pane active" id="info">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <?php if(isset($owner_about) && $owner_about != '') : ?>
-
-                <p><strong>About the Artist</strong><br>
-                <span class="muted"><?php echo $owner_about; ?></span></p><?php endif;?><?php
-                                    if(isset($row->description) && $row->description != '' ): ?>
-
-                <p><strong>Description</strong><br>
-                <span class="muted"><?php echo $row->description; ?></span></p><?php endif;?><?php 
-                                    if(isset($row->objective) && $row->objective != '') : ?>
-
-                <p><strong>I would like feedback on</strong><br>
-                <span class="muted"><?php echo $row->objective; ?></span></p><?php endif;?>
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 				<h3><?php echo $row->name;?></h3>
                 <small class="muted">By:</small> 
 				<a href="<?php echo base_url() . 'images/user/' . $owner_id;?>"><?php echo $owner_name;?></a>
@@ -69,10 +36,6 @@
 					<p><strong>I would like feedback on</strong><br>
 	 				<span class="muted"><?php echo $row->objective; ?></span></p>
 	 			<?php endif;?>
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
             </div>
 
             <div class="tab-pane" id="rate">

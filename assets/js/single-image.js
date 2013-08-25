@@ -90,15 +90,7 @@ gridType.flag = {
 	 	
 	 	//this needs an error/undefined check on flagId and flagType
 		$.ajax({
-<<<<<<< HEAD
-<<<<<<< HEAD
-			url: 'http://localhost:8888/GITS/gridtype/flag/ajax_flag',
-=======
 			url: gridType.localPath+'/flag/ajax_flag',
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-			url: gridType.localPath+'/flag/ajax_flag',
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 			type: 'POST',
 			data: { id: flagId, type: flagType}
 		}).done(function(data){
@@ -111,33 +103,6 @@ gridType.flag = {
 		$('.flag-confirmation').delay(1000).removeClass('out').addClass('in');
 	}	 
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-$(document).ready(function(){
-	gridType.curate.init('.thumbnails');
-	$('a#load-more-button').on('click',function(){
-		gridType.loadMore.get('image',12,'.thumbnail-item');
-	});
-});
-/*
-
-/* killing infinate scroll in lieu of a button for the time being
-$(window).scroll(function() {
-	var scrollFired = false;
-	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-		//    if($(window).scrollTop() <= ($(document).height() - 50) - $(window).height()){
-		if (!scrollFired || scrollFired === false) {
-			scrollFired = true;
-			$("#ajax_loader").css("display", "block");
-			setTimeout(gridType.loadMore.get('image',12,'.thumbnail-item'), 1000);
-			scrollFired = true;
-		}
-	}
-});
-*/
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 //This JS needs to do the following:
 /*
 !Functions
@@ -213,9 +178,4 @@ $(document).ready(function() {
 	$('.flag-alert button.btn').on('click', function() {
 		gridType.flag.send($(this));
 	});
-<<<<<<< HEAD
 }); // End Doc Ready Functions
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-}); // End Doc Ready Functions
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f

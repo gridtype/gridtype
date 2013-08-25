@@ -10,15 +10,7 @@
     <div id="uploadModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
     <?php if (empty($albums)){ ?>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<form action='<?php echo base_url();?>dashboard/albums/add_album'>
-=======
 	<form action='<?php echo site_url();?>dashboard/albums/ajax_add_album'>
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-	<form action='<?php echo site_url();?>dashboard/albums/ajax_add_album'>
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
     <div class="modal-header">
         <h3 id="uploadModalLabel">Add a Project</h3>
     </div>

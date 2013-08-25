@@ -1,14 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-class Comments extends GT_Controller {
-=======
+
 class Comments extends MY_Controller {
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-class Comments extends MY_Controller {
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 
    function __construct()
    {
@@ -17,50 +10,17 @@ class Comments extends MY_Controller {
 
    }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	private function render($view,$data=NULL)
-	{
-		
-		$this->layout->setLayout('/layout_view');
-		$data['albums'] = $this->hmvc_auth->get_user_albums();
-		$data['userid'] = $this->hmvc_auth->get('id');				
-		$data['logged_in'] = $this->hmvc_auth->logged_in();
-		$data['username'] = $this->hmvc_auth->get('username');
-		$data['role'] = $this->hmvc_auth->get('role');  
-		$data['header_view'] = $this->load->view('header_view',$data,TRUE);
-		$data['footer_view'] = $this->load->view('footer_view',$data,TRUE);				
-		$this->layout->view($view,$data);
-	}
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
    public function index()
    {
        $data = array(
-           'rows' => $this->db->get('comments'),
-<<<<<<< HEAD
-<<<<<<< HEAD
+          'rows' => $this->db->get('comments'),
        		'tab' => 'admin-comments'
-
-       );
-		$this->render('comments/index',$data);
-   }
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-       		'tab' => 'admin-comments',
-       		'menu' => 'admin'
+          'menu' => 'admin'
 
        );
 		$this->_render('comments/index',$data);
    }
 /*
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 
    public function edit($id)
    {

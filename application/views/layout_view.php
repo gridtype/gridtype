@@ -25,15 +25,6 @@
     <link rel="shortcut icon" href="<?php echo base_url()?>assets/ico/favicon.ico">
 
      <script src="<?php echo base_url()?>assets/js/lib/jquery.js"></script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-     
-=======
-
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
   </head>
 
   <body class="<?php if($this->uri->segment(1) != FALSE){ echo 'section-'.$this->uri->segment(1).' ';} if($this->uri->segment(2) != FALSE) { echo 'type-'.$this->uri->segment(2);} if ($this->uri->segment(3) != FALSE) {echo '-'.$this->uri->segment(3);} ?> ">

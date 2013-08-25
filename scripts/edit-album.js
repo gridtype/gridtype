@@ -1,22 +1,7 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
-	alert('hallo');
-	// when an album is ajax edited, we need to get some info about the album to populate the modal
-	// we start by hijacking the click event
-	$('a.edit').on('click',function(event){
-		alert('hello');
-		event.preventDefault();
-=======
 	// when an album is ajax edited, we need to get some info about the album to populate the modal
 	// we start by hijacking the click event
 	$('a.edit').on('click',function(){
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-	// when an album is ajax edited, we need to get some info about the album to populate the modal
-	// we start by hijacking the click event
-	$('a.edit').on('click',function(){
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		//get the id from the data attribute set on the anchor
 		var eid = $(this).attr('data-edit-id');
 		//call our ajaxGetAlbumInfo method to return what we need to know about the album being edited

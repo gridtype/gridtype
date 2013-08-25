@@ -18,13 +18,6 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-<<<<<<< HEAD
-<<<<<<< HEAD
- 	switch ($_SERVER['HTTP_HOST']) {
-    case "localhost:8888":
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 // var_dump($_SERVER);
  	//var_dump($_SERVER['REMOTE_ADDR']);
 	//$root = dirname(__FILE__);
@@ -32,17 +25,12 @@
  	//switch ($_SERVER['HTTP_HOST']) {
  	switch ($_SERVER['REMOTE_ADDR']){
     case "127.0.0.1":
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
         $env = 'development';
         break;
     default:
         $env = 'production';
         break;
 	}	
- 	
 	define('ENVIRONMENT', $env);
 /*
  *---------------------------------------------------------------

@@ -31,15 +31,7 @@ class Dashboard extends MY_Controller{
     	$data['menu'] = 'dashboard';
 		$data['role'] = $this->hmvc_auth->get_role();
 		$data['overview'] = $this->dashboard_model->get_user_overview();
-<<<<<<< HEAD
-<<<<<<< HEAD
-		$this->render('dashboard_view', $data);
-=======
 		$this->_render('dashboard_view', $data);
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-		$this->_render('dashboard_view', $data);
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 
     }
 

@@ -245,21 +245,10 @@ $config['encryption_key'] = 'thiscouldbejustaboutanything';
 |
 */
 $config['sess_cookie_name']		= 'ci_session';
-<<<<<<< HEAD
-<<<<<<< HEAD
-$config['sess_expiration']		= 0;
-$config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-=======
+
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= TRUE;
 $config['sess_encrypt_cookie']	= TRUE;
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-$config['sess_expiration']		= 7200;
-$config['sess_expire_on_close']	= TRUE;
-$config['sess_encrypt_cookie']	= TRUE;
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 $config['sess_use_database']	= TRUE;
 $config['sess_table_name']		= 'ci_sessions';
 $config['sess_match_ip']		= FALSE;

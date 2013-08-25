@@ -259,15 +259,7 @@ class Images extends MY_Controller {
                'user_id' => $this->hmvc_auth->get('id'),
                'comment' => $this->input->post('comment'),
            );
-<<<<<<< HEAD
-<<<<<<< HEAD
-		   
-=======
 
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		   //put the comment into our database
 		   $this->db->insert('comments', $data);
 
@@ -281,21 +273,8 @@ class Images extends MY_Controller {
 				'blockclass' => $block_class,
 				'username' => $this->hmvc_auth->get('username'),
 				'comment' => $this->input->post('comment')
-<<<<<<< HEAD
-<<<<<<< HEAD
-				
-				);
-				
-=======
-
 				);
 
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-
-				);
-
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 				echo json_encode($last_comment);
            //$this->single($this->input->post('image_id'));
        }
@@ -305,18 +284,6 @@ class Images extends MY_Controller {
 	{
 		//Get Count of Total Ratings
 		$get_piece = $this->db->get_where('ratings', array('piece_id'=>$id));
-<<<<<<< HEAD
-<<<<<<< HEAD
-		$count = $get_piece->num_rows(); 
-		return $count;
-		
-	}
-	public function median($id)
-	{		
-		$ratings = $this->db->get_where('ratings',array('piece_id' => $id));			
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		$count = $get_piece->num_rows();
 		return $count;
 
@@ -324,10 +291,6 @@ class Images extends MY_Controller {
 	public function median($id)
 	{
 		$ratings = $this->db->get_where('ratings',array('piece_id' => $id));
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		$ratings = $ratings->result();
 		if (empty($ratings)){
 			return;
@@ -347,27 +310,12 @@ class Images extends MY_Controller {
 			$m4 = $this->_calculate_median($m4);
 			$m5 = $this->_calculate_median($m5);
 			$median = array($m1,$m2,$m3,$m4,$m5);
-<<<<<<< HEAD
-<<<<<<< HEAD
-			//print_r($median);			
-			return $median;
-			}
-		
-	}
-	
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 			//print_r($median);
 			return $median;
 			}
 
 	}
 
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 	public function ajax_get_median($id)
 	{
 		$ratings = $this->db->get_where('ratings',array('piece_id' => $id));

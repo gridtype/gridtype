@@ -9,42 +9,9 @@ class Albums extends MY_Controller
 		$this->load->model('Gallery_model');
 
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-	private function render($view,$data=NULL){
-
-		$this->layout->setLayout('/layout_view');		
-		$data['albums'] = $this->hmvc_auth->get_user_albums();
-		$data['userid'] = $this->hmvc_auth->get('id');				
-		$data['logged_in'] = $this->hmvc_auth->logged_in();
-		$data['username'] = $this->hmvc_auth->get('username');
-		$data['role'] = $this->hmvc_auth->get('role');  
-		$data['header_view'] = $this->load->view('header_view',$data,TRUE);
-		$data['footer_view'] = $this->load->view('footer_view',$data,TRUE);		
-		
-		//$data['top_menu_view'] = $this->load->view('admin/menu_admin_view',$data,TRUE);
-		
-		$this->layout->view($view,$data);
-	
-	}
 
 	function index()
 	{
-		$user_id =	$this->hmvc_auth->get('id');
-		$data['title']	=	'Albums';
-		$data['h1']		= 	'Showing all albums';
-		$data['query']	=	$this->dashboard_model->get_albums($user_id);
-	    //$data['main'][]	= 	'gallery/albums_list.php';
-		$this->load->vars($data);
-		$this->render('gallery/albums_list', $data);
-	}
-=======
-	function index()
-	{
-=======
-	function index()
-	{
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		$data['menu'] = 'albums';
 		$user_id = $this->session->userdata('id');
 		$data['query'] = $this->dashboard_model->get_users_albums($user_id);
@@ -52,10 +19,6 @@ class Albums extends MY_Controller
 		$this->_render('gallery/albums_index', $data);
 	}
 /* DEPRECATED? Might not need a function for add new album since we do it with ajax
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 
 	function new_album()
 	{
@@ -72,19 +35,8 @@ class Albums extends MY_Controller
 
 	function edit($id = 0)
 	{
-<<<<<<< HEAD
-<<<<<<< HEAD
-		if(!$id)
-		{
-			redirect(base_url().'/dashboard/albums/', refresh);	
-		}
-		
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		if(!$id) { redirect(base_url().'/dashboard/albums/', refresh); }
 
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 		$this->load->helper('form');
 
 		$data['title']	=	'Albums';
@@ -225,25 +177,13 @@ class Albums extends MY_Controller
 
 	function admin()
 	{
-<<<<<<< HEAD
-<<<<<<< HEAD
-		$data['query']	=	$this->dashboard_model->get_albums();
-		$data['tab']	= 	'admin-projects';
-		$test = $data['query']->result();
-		$this->render('gallery/albums_admin_list_table', $data);
-=======
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+
 		$payload	=	$this->dashboard_model->get_albums();
 		$payload = $payload->result();
 		$data['query']	=	$payload;
 		$data['tab']	= 	'admin-projects';
 		$data['menu'] = 'admin';
 		$this->_render('gallery/albums_admin', $data);
-<<<<<<< HEAD
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 	}
 
 }

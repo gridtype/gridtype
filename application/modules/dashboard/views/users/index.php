@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <h4><a href="<?php echo base_url() ?>dashboard/users/add">Add a User</a></h4><br>
-=======
+
 <?php include_once('./application/modules/dashboard/views/admin/menu_admin_view.php');?>
 
     <a href="<?php echo base_url() ?>dashboard/users/add" class="btn">Add a User</a>
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
-=======
-<?php include_once('./application/modules/dashboard/views/admin/menu_admin_view.php');?>
-
-    <a href="<?php echo base_url() ?>dashboard/users/add" class="btn">Add a User</a>
->>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
 
     <table class="table table-hover">
         <thead>
