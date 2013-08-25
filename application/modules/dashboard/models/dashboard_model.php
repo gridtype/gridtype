@@ -107,7 +107,7 @@ class dashboard_model extends CI_Model {
 		$this->db->order_by('comments.timestamp', 'desc');
 		$this->db->limit(5);
 		$recent_comments = $this->db->get('comments');
-
+		//var_dump($recent_comments->result());
 		//$max_upload = GALLERY_MAX_UPLOAD / 1024;
 		return array
 				(

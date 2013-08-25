@@ -8,21 +8,6 @@ class Profile extends MY_Controller {
          //if(! $this->hmvc_auth->get('logged_in')) exit('Please log in');
           $this->load->model('Mdl_users');
    }
-  private function render($view,$data=NULL){
-
-    $this->layout->setLayout('/layout_view');
-
-	$data['logged_in'] = TRUE;
-	$data['albums'] = $this->hmvc_auth->get_user_albums();
-	$data['userid'] = $this->hmvc_auth->get('id');		
-	$data['username'] = $this->hmvc_auth->get('username');
-	$data['role'] = $this->hmvc_auth->get('role');  
-	$data['logged_in'] = $this->hmvc_auth->logged_in();
-	$data['header_view'] = $this->load->view('header_view',$data,TRUE);
-	$data['footer_view'] = $this->load->view('footer_view',$data,TRUE); 
-    $this->layout->view($view,$data);
-
-  }
 
    public function index()
    {
@@ -31,7 +16,7 @@ class Profile extends MY_Controller {
        $data = array(
            'row' => $row,
        );
-       $this->render('users/profile', $data);
+       $this->_render('users/profile', $data);
        //$this->load->view('users/edit', $data);
    }
 

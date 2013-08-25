@@ -21,7 +21,6 @@
             <hr />
             	<?php if(!$overview['recent_comments']) { echo '<h4  style="font-weight:300">No Comments Yet...</h4>'; } else {?>
                 <?php foreach ($overview['recent_comments'] as $comment) { ?>
-                    <?php print_r($comment->image);?>
 	                <div class="comment-dashboard span2">
                         
                               <?php
