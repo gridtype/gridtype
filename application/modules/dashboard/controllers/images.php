@@ -242,7 +242,7 @@ class Images extends MY_Controller
 
 	}
 
-	function delete($id, $parent)
+	function delete($id)
 	{
 
 		$delete = $this->dashboard_model->images_delete($id);
@@ -256,7 +256,7 @@ class Images extends MY_Controller
         else
         {
             $this->session->set_flashdata('jgrowl', $feedback);
-            redirect('dashboard/images/show/'.$parent, 'refresh');
+            redirect('dashboard/images', 'refresh');
         }
 
 		exit;

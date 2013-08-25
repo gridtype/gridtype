@@ -36,7 +36,7 @@
 
                     <?php echo anchor('dashboard/images/view/album-'.$row->album.'/'.$row->id,'<i class="icon-eye-open icon-white "></i>' , array('class' => 'view btn btn-mini btn-info','title' => 'Click to view')); ?>
                     <?php echo anchor('dashboard/images/edit/album-'.$row->album.'/'.$row->id,  '<i class="icon-edit icon-white"></i>', array('class' => 'edit btn btn-mini btn-success','title' => 'Click to edit', 'data-edit-id' => $row->id)); ?>
-                    <?php echo anchor('dashboard/albums/delete/'.$row->id, '<i class="icon-trash icon-white "></i>', array('class' => 'delete_ajax btn btn-mini btn-danger', 'title' => 'Click to delete')); ?>
+                    <?php echo anchor('dashboard/images/delete/'.$row->id, '<i class="icon-trash icon-white "></i>', array('class' => 'delete_ajax btn btn-mini btn-danger', 'title' => 'Click to delete')); ?>
 
 
              			    	</div>

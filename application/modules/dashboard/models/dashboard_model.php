@@ -86,18 +86,17 @@ class dashboard_model extends CI_Model {
 		$this->db->select('images.id');
 		$this->db->where('owner', $owner);
 		$this->db->from('images');
-		$some_query = $this->db->get();
-		$some_query = $some_query->result_array();
+		$some_query = $this->db->get()->result_array();
+
 		$image_array = array();
-//		var_dump($some_query);
-
-
+		//var_dump($image_array);
 		//Test if has commented images
 		if(!$some_query){
 		} else {
 		foreach ($some_query as $i){
 			array_push($image_array, $i['id']);
 		}
+		//var_dump($image_array);
         $this->db->flush_cache();
 		$this->db->select('comments.*,images.*,users.*');
 		$this->db->join('images', 'comments.image_id = images.id');
