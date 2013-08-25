@@ -11,7 +11,7 @@
                         <small>By: <A href="<?php echo base_url();?>users/show/<?php echo $row->id ?>"><?php echo $row->username;?></A></small>
                        
                         <div class="badge badge-info" style="float:right;"><?php echo $row->count; ?></div>
-                        <br/><br/> <button class="btn btn-disabled btn-mini"><i class="icon-th-large" style="margin-top:-1px;"></i></button>
+                      
                         
                     </div>
                     
