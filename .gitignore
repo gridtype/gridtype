@@ -2,4 +2,4 @@
 */.DS_Store
 application/logs
 /node_modules
-/uploads/*
+uploads/*
