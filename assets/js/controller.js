@@ -10,6 +10,7 @@
 GridType JS asset controller
 */
 (function(win, undefined){
+
 	//define some globals
 	var doc 		= win.document,
 		docElem 	= doc.documentElement,
