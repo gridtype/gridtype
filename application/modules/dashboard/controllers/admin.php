@@ -9,7 +9,6 @@ class Admin extends MY_Controller
 		if(! $this->hmvc_auth->is_admin()){
 			//exit('You are not an Admin!');
 			redirect(site_url());
-
 		}
 
         $this->load->library('form_validation');
@@ -22,7 +21,8 @@ class Admin extends MY_Controller
 		$data['tab'] = 'admin-dashboard';
 		$this->_render('admin/dashboard_admin',$data);
 
-    }
+	}
+
 /*
 	public function pagination()
 	{
@@ -34,7 +34,8 @@ class Admin extends MY_Controller
 	}
 */
 /*
- 	private function create_pagination($total)
+
+	private function create_pagination($total)
 	{
 
 		$this->load->library('pagination');
@@ -52,11 +53,12 @@ class Admin extends MY_Controller
 	     redirect('/users/index/');
 		//self::render('users/index');
 	}
-	
+
 	public function criterion()
 	{
 		$data['tab']	= 	'admin-ratings';
-		self::render('admin/dashboard_admin_criterion',$data);
+		$this->_render('admin/dashboard_admin_criterion',$data);
+
 	}
 	public function options()
 	{
@@ -64,4 +66,5 @@ class Admin extends MY_Controller
 		$this->_render('admin/dashboard_admin_options',$data);
 
 	}
+
 }

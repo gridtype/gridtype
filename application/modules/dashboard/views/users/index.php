@@ -1,4 +1,3 @@
-
 <?php include_once('./application/modules/dashboard/views/admin/menu_admin_view.php');?>
 
     <a href="<?php echo base_url() ?>dashboard/users/add" class="btn">Add a User</a>

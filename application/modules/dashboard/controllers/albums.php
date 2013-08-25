@@ -9,7 +9,6 @@ class Albums extends MY_Controller
 		$this->load->model('Gallery_model');
 
 	}
-
 	function index()
 	{
 		$data['menu'] = 'albums';
@@ -18,20 +17,6 @@ class Albums extends MY_Controller
 
 		$this->_render('gallery/albums_index', $data);
 	}
-/* DEPRECATED? Might not need a function for add new album since we do it with ajax
-
-	function new_album()
-	{
-		$data['title']	=	'Albums';
-		$data['h1']		= 	'Create New Album';
-		$data['user_id'] =	$this->hmvc_auth->get('id');
-		$this->load->helper('form');
-		$this->load->vars($data);
-		$this->render('gallery/albums_new', $data);
-
-	}
-*/
-
 
 	function edit($id = 0)
 	{
@@ -177,7 +162,6 @@ class Albums extends MY_Controller
 
 	function admin()
 	{
-
 		$payload	=	$this->dashboard_model->get_albums();
 		$payload = $payload->result();
 		$data['query']	=	$payload;

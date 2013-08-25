@@ -245,7 +245,6 @@ $config['encryption_key'] = 'thiscouldbejustaboutanything';
 |
 */
 $config['sess_cookie_name']		= 'ci_session';
-
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= TRUE;
 $config['sess_encrypt_cookie']	= TRUE;

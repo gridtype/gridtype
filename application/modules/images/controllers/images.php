@@ -273,6 +273,7 @@ class Images extends MY_Controller {
 				'blockclass' => $block_class,
 				'username' => $this->hmvc_auth->get('username'),
 				'comment' => $this->input->post('comment')
+
 				);
 
 				echo json_encode($last_comment);

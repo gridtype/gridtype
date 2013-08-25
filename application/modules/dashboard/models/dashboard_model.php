@@ -100,9 +100,9 @@ class dashboard_model extends CI_Model {
 		}
         $this->db->flush_cache();
 		$this->db->select('comments.*,images.*,users.*');
-		$this->db->where('comments.flagged',0);
 		$this->db->join('images', 'comments.image_id = images.id');
 		$this->db->join('users', 'comments.user_id = users.id');
+		$this->db->where('comments.flagged',0);		
 		$this->db->where_in('comments.image_id', $image_array);
 		$this->db->order_by('comments.timestamp', 'desc');
 		$this->db->limit(5);

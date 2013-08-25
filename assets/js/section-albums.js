@@ -46,17 +46,17 @@ gridType.loadMore = {
 		if (type === 'image' || type === 'album' ){
 			console.log('asking for '+limitResult+' items with an offset of '+offsetCount);
 				$.ajax({
-					url: gridType.localPath + ajaxPath,
+					url: gridType.localPath + '/' + ajaxPath,
 					type: 'POST',
 					data: {
 						offset: offsetCount,
 						limit: limitResult
 					}
 				}).done(function(data) {
-				
 					var payload = $.parseJSON(data),
 						payloadCount = payload.length,
 						html = '';
+					console.log(payload);
 					if (payloadCount === 0 || payloadCount < limitResult) { gridType.loadMore.last() }
 					if (type === 'image'){
 						$.each(payload, function(i, item) {

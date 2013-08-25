@@ -37,7 +37,6 @@
 	gridType.dev.mobileOverride = location.search.indexOf("mobile-assets") >= 0;
 
 	//callback for dependencies.
-
 	// You can use isDefined to run code as soon as the document.body is defined, for example, for body-dependent scripts
 	// or, for a script that's loaded asynchronously that depends on other scripts, such as jQuery.
 	// First argument is the property that must be defined, second is the callback function
@@ -47,6 +46,7 @@
 		if( callback ){
 			callbackStack.push( callback );
 		}
+
 		function checkRun(){
 			if( eval( prop ) ){
 				while( callbackStack[0] && typeof( callbackStack[0] ) === "function" ){
@@ -54,22 +54,24 @@
 				}
 			}
 			else{
-				setTimeout(checkRun, 15); 
+				setTimeout(checkRun, 15);
 			}
 		};
-		
+
 		checkRun();
 	};
-	
-	// shortcut of isDefine body-specific 
+
+	// shortcut of isDefine body-specific
 	gridType.bodyready = function( callback ){
 		gridType.onDefine( "document.body", callback );
 	};
-	
+
 	/* Asset loading functions:
 		- gridType.load is a simple script or stylesheet loader
 		- scripts can be loaded via the gridType.load.script() function
-		- Styles can be loaded via the gridType.load.style() function, */
+		- Styles can be loaded via the gridType.load.style() function,
+		  which accepts an href and an optional media attribute
+	*/
 
 	//loading functions available on gridType.load
 	gridType.load = {};
@@ -100,6 +102,7 @@
 				head.appendChild( lk );
 			}
 	};
+
 	//define gridType.load.style
 	gridType.load.script = function( src ){
 		console.log(src);
@@ -115,10 +118,12 @@
 				head.appendChild( script );
 			}
 	};
+
 	//quick element class existence function
 	gridType.hasClass = function( el, classname ){
 		return el.className.indexOf( classname ) >= 0;
 	};
+
 	//cookie functions - set,get,forget
 	gridType.cookie = {
 		set: function(name,value,days) {
@@ -152,4 +157,7 @@
 		touch				: Modernizr.touch,
 		displayTable		: Modernizr[ "display-table" ]
 	});
+
+
+
 })(this);

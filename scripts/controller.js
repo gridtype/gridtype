@@ -10,7 +10,7 @@
 GridType JS asset controller
 */
 (function(win, undefined){
-	alert('hello world');
+
 	//define some globals
 	var doc 		= win.document,
 		docElem 	= doc.documentElement,
@@ -19,6 +19,8 @@ GridType JS asset controller
 
 
   	//var for path
+  	//var localPath = 'http://10.61.194.194:8888/';
+ 	//var localPath = 'http://localhost:9998/GITS/gridtype/';
 	//var localPath = 'http://local.beta.projectgridtype.org:9998';
 	var hostname = window.location.hostname;
 	var port	 = window.location.port;
@@ -26,6 +28,7 @@ GridType JS asset controller
 		port = ':'+port;
 	}
 	var localPath = 'http://'+hostname+port;
+
  	gridType.localPath = localPath;
 	//define file loading paths
 	gridType.config = {
@@ -62,6 +65,7 @@ GridType JS asset controller
 
 	//wait for body to be ready for the rest, so we can check the body class and load accordingly
 	gridType.bodyready(function(){
+
 		var body	 	= doc.body,
 			tmplTypes	= [
 					"home",
@@ -72,6 +76,7 @@ GridType JS asset controller
 					"view",
 					"single",
 					"albums"
+
 			],
 			sections	= [
 				"dashboard",
@@ -81,25 +86,30 @@ GridType JS asset controller
 			],
 			//get longer for loop length
 			loopLength = tmplTypes.length > sections.length ? tmplTypes.length : sections.length;
+
 		//run one loop to determine type, section
 		for( var x=0; x < loopLength; x++ ){
+
 			if( sections[x] ){
 				if( gridType.hasClass( body, "section-" + sections[x] ) ){
 					gridType.section = sections[x];
 				}
 			}
+
 			if( tmplTypes[x] ){
 				if( gridType.hasClass( body, "type-" + tmplTypes[x] ) ){
 					gridType.tmplType = tmplTypes[x];
 				}
 			}
+
+
 		}
+
 		console.log('Section: '+gridType.section);
 		console.log('Type: '+gridType.tmplType);
 
 		if (gridType.section === "dashboard"){
 			cssToLoad.push("dashboard.css");
-
 			//jsToLoad.push(gridType.assets.js.tips);
 
 			if(gridType.tmplType === 'images'){
@@ -116,9 +126,11 @@ GridType JS asset controller
 
 				cssToLoad.push(gridType.assets.css.xCharts);
 				cssToLoad.push(gridType.assets.css.imageSection);
+
 			}
 			if(gridType.tmplType === 'albums'){
 				jsToLoad.push('edit-album.js');
+
 			}
 			if(gridType.tmplType === 'profile'){
 
@@ -151,6 +163,7 @@ GridType JS asset controller
 			}
 
 		}
+
 		//load assets
 		if ( jsToLoad.length ){
 			gridType.load.script( gridType.config.path.js + jsToLoad.join(",") );
@@ -160,19 +173,23 @@ GridType JS asset controller
 		}
 	});
 
+
 	//scroll to top, hide address bar on mobile devices - 1 for android, 0 for the rest
 	if( !location.hash ){
+
 		//scroll to top
 		window.scrollTo( 0, 1 );
 		var scrollTop = 1,
 			getScrollTop = function(){
 				return "scrollTop" in doc.body ? doc.body.scrollTop : 1;
 			};
+
 		//reset to 0 on bodyready, if needed
 		gridType.bodyready(function(){
 			var scrollTop = getScrollTop();
 			window.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
 		});
+
 		window.onload = function(){
 			setTimeout(function(){
 				//reset to hide addr bar at onload
@@ -185,4 +202,6 @@ GridType JS asset controller
 
 	// WebReflection Solution for ensuring domready fires when dynamically appending jQuery in older browsers
 	(function(h,a,c,k){if(h[a]==null&&h[c]){h[a]="loading";h[c](k,c=function(){h[a]="complete";h.removeEventListener(k,c,!1)},!1)}})(document,"readyState","addEventListener","DOMContentLoaded");
+
+
 })( this );

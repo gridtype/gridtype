@@ -13,10 +13,10 @@ class Users extends MY_Controller {
    {
 	  $data = array(
 	    'rows' => $this->db->get('users'),
-      'tab' => 'admin-users',
-      'menu' => 'admin'
-
+	    'tab' => 'admin-users',
+	    'menu' => 'admin'
 	  );
+
       $this->_render('users/index', $data);
    }
 
@@ -36,6 +36,7 @@ class Users extends MY_Controller {
            $this->add();
        } else {
             $password = $this->hmvc_auth->secure_password($this->input->post('email'),$this->input->post('password'));
+
            $data = array(
                'username' => $this->input->post('username'),
                'role' => $this->input->post('role'),
@@ -53,7 +54,6 @@ class Users extends MY_Controller {
        $data = array(
            'row' => $row,
        );
-
        $this->_render('users/edit', $data);
    }
 

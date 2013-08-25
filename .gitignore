@@ -1,6 +1,4 @@
 
-.DS_Store
 */.DS_Store
-/application/logs
+application/logs
 /node_modules
-

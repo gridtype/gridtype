@@ -1,6 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/groups.css" />
-</head>
-<br />
+
 <h3>Add a Record</h3><br />
 <table>
 <?php echo form_open('groups/add_validate'); ?>

@@ -1,6 +1,5 @@
 <?php
 
-
 class Comments extends MY_Controller {
 
    function __construct()
@@ -13,9 +12,9 @@ class Comments extends MY_Controller {
    public function index()
    {
        $data = array(
-          'rows' => $this->db->get('comments'),
-       		'tab' => 'admin-comments'
-          'menu' => 'admin'
+           'rows' => $this->db->get('comments'),
+       		'tab' => 'admin-comments',
+       		'menu' => 'admin'
 
        );
 		$this->_render('comments/index',$data);

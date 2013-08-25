@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),		
+        pkg: grunt.file.readJSON('package.json'),
         compass: {
             dist: {
                 options: {
@@ -42,6 +42,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-manifest-concat')
+
+
     grunt.registerTask('default', ['compass:dist', 'copy:dist', 'concatfest'])
     grunt.registerTask('release', ['compass:dist', 'copy:dist', 'concatfest'])
 

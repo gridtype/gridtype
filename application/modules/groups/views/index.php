@@ -1,6 +1,3 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/groups.css" />
-</head>
-<br />
 <h3>Groups Records</h3><br />
 <h4><a href="<?php echo base_url() ?>groups/add">Add a Record</a></h4><br />
 <table>
