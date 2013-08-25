@@ -1,0 +1,11 @@
+RewriteEngine On
+# Quick CSS/JS combinator
+RewriteRule ^assets/css/(.*\.css) combine.php?type=css&files=$1
+RewriteRule ^assets/js/(.*\.js) combine.php?type=javascript&files=$1
+
+RewriteCond %{REQUEST_URI} ^/system.*
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.+)$ index.php?/$1 [L]
+RewriteRule ^(.+)$ index.php?/$1 [L]

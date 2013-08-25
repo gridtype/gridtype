@@ -1,0 +1,6 @@
+* { margin:0; }
+table { margin-left:20px; }
+h3, h4, h5 { font-family:sans-serif; margin-left:20px; }
+table th, td { font-family:sans-serif; border:1px solid black; padding:5px; }
+.error { font-family:sans-serif; font-style:italic; margin-left:20px; }
+

@@ -1,0 +1,106 @@
+#main img {
+}
+
+.img-polaroid {
+<<<<<<< HEAD
+<<<<<<< HEAD
+	width:80%;
+=======
+	width:100%;
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+=======
+	width:100%;
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+	float:left;
+}
+
+.iterations-well {
+	width:15%;
+	margin-top:7%;
+	float:left;
+	background:#f3f3f3;
+	padding-left:15px;
+	box-shadow:1px 1px 4px #ccc;
+}
+
+.iterations-well h5 {
+	margin:0;
+}
+
+.iteration-container {
+	overflow-y:auto;
+	max-height:275px;
+	padding-top:15px;
+	padding-bottom:5px;
+}
+
+
+.iteration-thumb {
+	margin-bottom:10px;
+	width:88%;
+}
+
+#right-rail .collapsed {
+	display:none;
+}
+
+.xchart {
+	padding:20px;
+	margin-left:-51px;
+}
+
+.faculty-flag,.student-flag {
+	font-size:.7em;
+}
+
+blockquote {
+	padding:10px;
+}
+
+.faculty-flag em,.student-flag em {
+	color:#aaa;
+	float:right;
+	margin-right:15px;
+}
+
+/* Scrolls */
+::-webkit-scrollbar-track {
+      background-color: #b46868;
+} /* the new scrollbar will have a flat appearance with the set background color */
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+} /* this will style the thumb, ignoring the track */
+::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+@media (max-width: 480px) {
+
+	#main img {
+		width:97%;
+	}
+<<<<<<< HEAD
+<<<<<<< HEAD
+	
+=======
+
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+=======
+
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+	.iterations-well {
+		display:none;
+	}
+
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+ 
+=======
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+=======
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f

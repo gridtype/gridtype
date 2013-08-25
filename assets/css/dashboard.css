@@ -1,0 +1,99 @@
+/* Main Dashboard */
+
+.image-toolbar {
+	margin:0;
+}
+div.recent-comment {
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+div.recent-comment {
+	margin-top:40px;
+	margin-bottom:50px;
+
+}
+
+div.recent-list img {
+	
+	margin-right:20px;
+}
+
+div.right-top {
+	width:200px;
+	float:right;
+}
+
+div.upload-btn {
+	width:154px;
+	height:36px;
+	background: url('../img/upload-dash.png');
+	color:#fff;
+	font-weight: 600;
+	margin-top:0;
+}
+.search-box {
+	border:3px solid #bbb;
+	border-radius:20px;
+	padding:5px;
+	margin:0;
+}
+
+.span12 h1 {
+	margin-bottom:0.7em;
+}
+
+.comment-dashboard {
+
+	padding:5px;
+	box-shadow:0px 0px 3px #aaa;
+	font-size:0.8em;
+
+}
+
+.comment-dashboard img{
+	width:100%;
+	float:left;
+	padding-right:5px;
+
+}
+
+.byline {
+	margin: 10px 0;
+}
+
+img.dash-recent-commented {
+	width:30%;
+}
+
+/* Dashboard -> Images / Albums */
+
+/* Images */
+#right-rail .collapsed{
+	display: none;
+}
+
+.thumbnail {
+	padding:0;
+}
+
+.btn-group:first-child {
+margin-top: 13px;
+}
+
+.single-image {margin-top:0.7em;}
+
+/*
+
+.album_row {
+	background:#eee;
+	padding:15px;
+
+}
+
+.row-fluid .span3 {
+width: 17%;
+margin-left:0em;
+margin-right:2em;
+}
+*/

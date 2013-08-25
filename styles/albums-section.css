@@ -1,0 +1,20 @@
+ul.thumbnails .fluid-row{
+	clear:both;
+	overflow: auto;
+	margin-bottom: 1em;
+}
+
+.caption {
+	font-size:0.85em;
+}
+
+ul.thumbnails li.thumbnail-item{
+	margin-left: 0!important;
+	margin-right: 2%;
+}
+
+#ajax_loader{
+	width: 31px;
+	margin: 0 auto;
+}
+

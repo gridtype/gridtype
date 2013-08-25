@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chunky_png (1.2.7)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.10)
+    sass (3.2.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+<<<<<<< HEAD
+<<<<<<< HEAD
+  compass
+=======
+  compass
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
+=======
+  compass
+>>>>>>> 226e251d1842e0dff6de5f412ea94d41b36f5c6f
