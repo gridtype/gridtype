@@ -1,3 +1,8 @@
+/* Hide Benchmarks 
+#codeigniter_profiler {
+display: none;
+}
+*/
 .navbar-search .search-query{
 	margin-top:2px;
 }
@@ -136,7 +141,7 @@
 		background:rgba(255,255,255,0.96);
 	}
 	
-	.well {
+	/* .well {
 		min-height:20px;
 		padding:19px;
 		margin-bottom:20px;
@@ -145,7 +150,7 @@
 		border-radius:0;
 		box-shadow:none;
 	}
-	
+	*/ 
 	.form-inline {
 		padding:0;
 		margin-top:0;
