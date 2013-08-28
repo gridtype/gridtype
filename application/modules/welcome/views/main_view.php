@@ -1,5 +1,4 @@
-<div class="alert alert-info span12" style=""><h3>Hello Friends --</h3> We're in private BETA at the moment. We anticipate switching to public BETA very soon. If you would like to personally test GRIDTYPE for a course this summer, contact <br/><strong>Matthew White</strong> - <a href="http://www.twitter.com/dirkweiss">@dirkweiss</a> / info@projectgridtype.org. 
-</div>
+
 <center>
 <p>&nbsp;</p>
 <a class="brand" href="<?php echo $this->config->site_url();?>"> <img src="<?php echo base_url();?>/assets/img/logo.png"> </a>

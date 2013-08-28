@@ -16,7 +16,7 @@
 		<?php foreach ($query as $album) : ?>
 		<tr>
 			<td><?php echo $album->id; ?></td>
-			<td><?php echo $album->name; ?></td>
+			<td><a href="<?php echo base_url(); ?>images/album/<?php echo $album->id;?>"><?php echo $album->name; ?></a></td>
 			<td>IMAGE COUNT</td>
 			<td><?php echo $album->private; ?></td>
 			<td></td>
