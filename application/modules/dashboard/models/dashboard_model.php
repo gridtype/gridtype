@@ -379,7 +379,7 @@ imageS
 			    $this->images_delete($data['id'], TRUE);
             }
 
-			$folder = './uploads/gallery-'.$data['album'].'/';
+			$folder = './assets/uploads/gallery-'.$data['album'].'/';
 
 			if(!is_dir($folder))
 			{
