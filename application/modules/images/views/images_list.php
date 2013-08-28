@@ -7,7 +7,7 @@
                 <?php endif; ?>
 
                 <div class="img_wrap">
-                    <?php echo anchor('images/view/'.$row->id, '<img src="'.base_url().$row->image.'_thumb'.$row->image_type.'"  alt="'.$row->name.'" class="img-polaroid"/>'); ?>
+                    <?php echo anchor('images/view/'.$row->id, '<img src="'.base_url(). 'assets'. $row->image.'_thumb'.$row->image_type.'"  alt="'.$row->name.'" class="img-polaroid"/>'); ?>
                 </div>
             </li>
         <?php endforeach; ?>

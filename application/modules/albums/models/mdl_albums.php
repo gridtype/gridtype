@@ -132,7 +132,7 @@ class Mdl_albums extends CI_Model {
 			$p = $query->row();
 		}
 
-		return base_url().'/'.$p->image.'_'.$size.$p->image_type;
+		return base_url().'assets'.$p->image.'_'.$size.$p->image_type;
 
 
 	}
