@@ -14,7 +14,7 @@ gridType.loadMore = {
 		} else {
 			gridType.loadMore.ajaxInProcess = true;
 		}
-		if (type === 'image'){ ajaxPath = 'images/ajaxGetImages/'; objectPath = 'images/single/';}
+		if (type === 'image'){ ajaxPath = 'images/ajaxGetImages/'; objectPath = '/images/view/';}
 		if (type === 'album'){ ajaxPath = 'albums/ajaxGetAlbums/'; objectPath = 'images/album/';}
 		if (type === 'image' || type === 'album' ){
 			console.log('asking for '+limitResult+' items with an offset of '+offsetCount);
@@ -33,7 +33,7 @@ gridType.loadMore = {
 					if (payloadCount === 0 || payloadCount < limitResult) { gridType.loadMore.last() }
 					if (type === 'image'){
 						$.each(payload, function(i, item) {
-							html += '<li class="span2 thumbnail-item"><div class="thumbnail"><a href="' + gridType.localPath + objectPath + item.id + '"><img src="' + gridType.localPath + item.image + item.image_type + '"></a><div class="caption"><span>' + item.name + '</span></div></div></li>';
+							html += '<li class="span2 thumbnail-item"><div class="thumbnail"><a href="' + gridType.localPath + objectPath + item.id + '"><img src="' + gridType.localPath + '/assets' +  item.image + item.image_type + '"></a><div class="caption"><span>' + item.name + '</span></div></div></li>';
 						});							
 					}
 					if (type === 'album'){
