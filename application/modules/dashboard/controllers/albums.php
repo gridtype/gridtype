@@ -131,7 +131,7 @@ class Albums extends MY_Controller
 
 			//return $data['id'];
 
-			redirect('dashboard/images/show/'.$id);
+			redirect('dashboard/images/album/'.$id);
 	}
 
 

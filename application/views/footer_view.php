@@ -10,7 +10,7 @@
     <div id="uploadModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel" aria-hidden="true">
     <?php if (empty($albums)){ ?>
 
-	<form action='<?php echo site_url();?>dashboard/albums/ajax_add_album'>
+	<form action='<?php echo site_url();?>dashboard/albums/add_album'>
     <div class="modal-header">
         <h3 id="uploadModalLabel">Add a Project</h3>
     </div>
@@ -92,7 +92,7 @@
     </div>
 
     <div id="addAlbumModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="addAlbumLabel" aria-hidden="true">
-	<form action='<?php echo base_url();?>dashboard/albums/ajax_add_album'>
+	<form action='<?php echo base_url();?>dashboard/albums/add_album'>
     <div class="modal-header">
         <h3 id="addAlbumModalLabel">Add a Project</h3>
     </div>

@@ -1,4 +1,4 @@
-<?php echo form_open_multipart('dashboard/albums/submit'); ?>
+<?php echo form_open_multipart('dashboard/albums/add_album'); ?>
 
 	<div class="hidden">
 		<input type="hidden" name="id" value="" />
