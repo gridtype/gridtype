@@ -1,4 +1,4 @@
 gridtype
 ========
 
-A fork of FireStarter with a focus on images, albums, rating and user management.
+GRIDTYPE is an assessment and archive tool to enable the documentation of the qualitative nature of design-education critique. This project stems from an expressed need from faculty and students, for a more definitive evaluative measure of student progress.
