@@ -14,7 +14,8 @@
                 <p><strong>Description</strong><br>
                 <?php echo $image->description;?></p><strong>Objective</strong><br>
                 <?php echo $image->objective;?>
-                <p>&nbsp;</p><?php echo anchor('dashboard/images/edit/album-'.$image->album.'/'.$image->id,  'Edit <i class="edit icon-edit icon-white"></i>', array('class' => 'btn btn-mini btn-success')); ?> <a href="#deleteModal" class="btn btn-mini btn-danger" title="Delete" data-toggle="modal">Delete <i class="edit icon-trash icon-white"></i></a>
+                <p>&nbsp;</p><?php echo anchor('dashboard/images/edit/album-'.$image->album.'/'.$image->id,  'Edit <i class="edit icon-edit icon-white"></i>', array('class' => 'btn btn-mini btn-success')); ?> 
+                <!--<a href="#deleteModal" class="btn btn-mini btn-danger" title="Delete" data-toggle="modal">Delete <i class="edit icon-trash icon-white"></i></a> -->
 			</div>
 			<div class="tab-pane" id="rate">
 	            <div id="rating-graph" style="padding-top:20px;height:190px;margin-left:0px; padding:0; margin-bottom:80px;">
@@ -55,13 +56,13 @@
 		</div>
 		</div></div>
     <?php echo '<script type="text/javascript"> var median = '. $median .'</script>';?>
-	<div id="deleteModal" class="modal hide fade">
+	<!-- <div id="deleteModal" class="modal hide fade">
 	  <div class="modal-header">
-	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 	    <h3>Delete Image</h3>
 	  </div>
 	  <div class="modal-footer">
 		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 	    <?php echo anchor('dashboard/images/delete/'.$query->id.'/'.$query->album,  'Delete', array('class' => 'btn btn-danger', 'title' => $query->name)); ?>
-	  </div>
+	  </div> -->
 	</div>
