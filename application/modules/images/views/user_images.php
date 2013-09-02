@@ -12,8 +12,8 @@
 
         <li class="span2 thumbnail-item">
             <div class="thumbnail">
-                <a href="<?php echo base_url();?>/images/view/<?php echo $row->id; ?>">
-                	<img src="<?php echo base_url().$row->image.$row->image_type; ?>">
+                <a href="<?php echo base_url();?>images/view/<?php echo $row->id; ?>">
+                	<img src="<?php echo base_url() . 'assets' .$row->image.$row->image_type; ?>">
                 </a>
                 <div class="caption">
                         <span><?php echo $row->name; ?></span>
