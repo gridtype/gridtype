@@ -160,7 +160,7 @@ class Images extends MY_Controller
         {
             $this->session->set_flashdata('jgrowl', 'image saved');
 
-            redirect('dashboard/images/show/'.$this->input->post('album'), 'refresh');
+            redirect('dashboard/images/album/'.$this->input->post('album'), 'refresh');
 		    exit;
         }
 
