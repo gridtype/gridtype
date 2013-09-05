@@ -1,5 +1,5 @@
     <div id="main" class="span7">
-		<a href="<?php echo base_url().$row->image.$row->image_type;?>" class="fancybox"><img src="<?php echo base_url(). 'assets' .$row->image.$row->image_type;?>" class="img-polaroid" style="cursor:pointer"></a>
+		<a href="<?php echo base_url().$row->image.$row->image_type;?>" class="fancybox"><img src="<?php echo base_url().$row->image.$row->image_type;?>" class="img-polaroid" style="cursor:pointer"></a>
 
    <!--     <div class="iterations-well">
             <div class="iteration-container"><img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"> <img src="<?php echo base_url()?>/assets/img/iteration-holder.png" class="iteration-thumb"></div>
