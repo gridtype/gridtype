@@ -1,7 +1,7 @@
     <footer>
-        <p class="pull-right"><a href="#">&copy; 2013 Zocalo</a></p>
+        <p class="pull-right"><a href="#">&copy; 2013 Project Grid Type - An open source project for education.</a></p>
       
-        <p>Learn about some of the awesome technologies behind Zocalo's Firestarter <a href="<?php echo site_url();?>/intro">here</a>.</p>
+        <p>Gridtype <a href="http://gridtype.github.io/gridtype/" target="_blank">Github</a> | File a bug <a href="https://github.com/gridtype/gridtype/issues?state=open" target="_blank">Here</a></p>
     </footer>
         <?php if (isset($logged_in) && $logged_in == TRUE){ ?>
     
