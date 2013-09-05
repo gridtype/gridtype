@@ -1,4 +1,4 @@
-<h1><span class="title-first-part">Dashboard ></span> My Proejcts ></h1>
+<h1><span class="title-first-part">Dashboard ></span> My Projects ></h1>
 
 <div class="row-fluid">
 		<?
