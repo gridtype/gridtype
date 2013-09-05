@@ -1,6 +1,11 @@
-<h1><span class="title-first-part">Dashboard ></span> My Projects ></h1>
+<?php foreach ($query->result() as $row1): ?> 
+	<?php $albname = $row1->name; ?>
+<?php endforeach; ?>
 
+<h1><span class="title-first-part">Dashboard > My Projects > </span><?php echo $albname; ?>
+</h1>
 <div class="row-fluid">
+	
 		<?
 			if(!$query->result()) { ?>
 				<div class="alert alert-info">
