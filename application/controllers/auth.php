@@ -17,7 +17,7 @@ class Auth extends MX_Controller{
 		
         if ( $this->hmvc_auth->get('logged_in') == TRUE ){ 
 		
-            redirect((site_url('dashboard')));
+            redirect((site_url('albums')));
         }
         else{
 
@@ -41,7 +41,7 @@ class Auth extends MX_Controller{
                 $this->hmvc_auth->set($data); 
 				
 				$this->session->set_flashdata('msg', '<div class="alert alert-success">Success!</div>');
-                redirect(site_url('dashboard'));
+                redirect(site_url('albums'));
 					
             }
 				
