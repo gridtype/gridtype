@@ -17,15 +17,16 @@
      
         </div>
         <div class="recent-comment">
-            <h3>Recently Commented</h3>
+            <h3>Recent Comments</h3>
             <hr />
             	<?php if(!$overview['recent_comments']) { echo '<h4  style="font-weight:300">No Comments Yet...</h4>'; } else {?>
                 <?php foreach ($overview['recent_comments'] as $comment) { ?>
 	                <div class="comment-dashboard span2">
                         
                               <?php
-                                echo '<a href="dashboard/images/view/album-'.$comment->album.'/'.$comment->image_id.'"><img class="dash-recent-commented" src="'.site_url().$comment->image . $comment->image_type.'"/></a>';
+                                echo '<a href="dashboard/images/view/album-'.$comment->album.'/'.$comment->image_id.'">';
                                 echo $comment->comment; 
+                                echo '</a>';
                             ?>
                             
                             </div> 
